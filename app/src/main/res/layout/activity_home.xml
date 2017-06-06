@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shop.bin.ui.activity.HomeActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:background="@color/main_color"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <shop.bin.ui.view.customview.FontAwesomeTextView
+                android:id="@+id/humman_tv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/user_icon"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <shop.bin.ui.view.customview.FontAwesomeTextView
+                android:id="@+id/recycle_tv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/humman_tv"
+                android:gravity="center"
+                android:text="@string/recycle_bin_icon"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+            <shop.bin.ui.view.customview.FontAwesomeTextView
+                android:id="@+id/shopping_cart_tv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/recycle_tv"
+                android:gravity="center"
+                android:text="@string/shopping_cart_icon"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <shop.bin.ui.view.customview.FontAwesomeTextView
+                android:id="@+id/tag_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/shopping_cart_tv"
+                android:gravity="center"
+                android:text="@string/tag_icon"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <shop.bin.ui.view.customview.FontAwesomeTextView
+                android:id="@+id/menu_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/navi_icon"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <shop.bin.ui.view.customview.FontAwesomeTextView
+                android:id="@+id/home_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/menu_iv"
+                android:gravity="center"
+                android:text="@string/home_icon"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/df_edt_actionbar_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/df_martin_sm"
+                android:layout_marginRight="@dimen/df_martin_sm"
+                android:layout_toLeftOf="@id/tag_iv"
+                android:layout_toRightOf="@id/home_iv"
+                android:background="@drawable/search_actionbar_border"
+                android:hint="@string/search_hint_text"
+                android:paddingLeft="@dimen/df_martin_sm"
+                android:paddingRight="@dimen/df_martin_sm"
+                android:textSize="@dimen/actionbar_text_size" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar" />
+</RelativeLayout>

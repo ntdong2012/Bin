@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Bin</string>
+
+    <string name="user_icon">&#xf007;</string>
+    <string name="recycle_bin_icon">&#xf014;</string>
+    <string name="shopping_cart_icon">&#xf07a;</string>
+    <string name="tag_icon">&#xf02b;</string>
+    <string name="navi_icon">&#xf0c9;</string>
+    <string name="home_icon">&#xf17a;</string>
+
+    <string name="search_hint_text">Search</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
+
+</resources>
